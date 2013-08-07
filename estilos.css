@@ -1,3 +1,5 @@
+/*Y ahora los estilos:*/
+/*Se importan las fuentes especiales...*/
 @font-face {
 	font-family: 'icomoon';
 	src:url('fonts/icomoon.eot');
@@ -8,20 +10,25 @@
 	font-weight: normal;
 	font-style: normal;
 }
-
+/*Se le da color a los links*/
 a
 {
 	color: #DD4F24;
 }
+/*Características básicas del body*/
 body
 {
+	/*Color de fondo de la página.*/
 	background: #EFEFEF;
+	/*Color de la fuente*/
 	color: #4C4C4C;
+	/*Tipografía(PT Sans), y, en caso de que no se pueda cargar esa...Arial*/
 	font-family: "PT Sans", Arial;
+	/*Tamaño de fuente*/
 	font-size: 16px;
 
 }
-
+/*Y del footer...[De auí todo es muy intuitivo, así que sólo explicaré lo importante]*/
 footer
 {
 	background: #434343;
@@ -30,6 +37,7 @@ footer
 	text-align: center;
 	width: 100%;
 }
+/*Anidados: estamos diciendo que le aplique los estilos a el párrafo que esté dentro del footer*/
 footer p
 {
 	margin: 0;
@@ -42,37 +50,47 @@ header
 	padding: 0.5em;
 	position: relative;
 }
-header:after{
-	clear: both;
-	content: "";
-	display: block;
-}
-
 header a div
 {
 	background-color: #22BCE0;
-	border-top-left-radius: 3px;
-	border-top-right-radius: 3px;
+	/*El redondeado del borde */
+	border-radius: 3px 3px 0 0;
 	color: white;
+	/*El alto*/
 	height: 22px;
+	/*El ancho*/
 	width:80px;
 	position: absolute;
+	/*Espacio desde abajo*/
 	bottom: 0;
+	/*Espacio desde la izquierda*/
 	left: 60%;
 	padding: 0 10px;
 	font-size: 1.1em;
  
 }
+/*Agregar las tipografías especiales :o*/
+/*Despues del div que contiene el link que está en el header...*/
 header a div:after
 {
-	
+	/*Agregar la "letra":*/
 	content: "\e002";
+	/*50% de opacidad*/
 	opacity: 0.5;
+	/*Y la fuente(Lo más importante)que sabe a qué caracter se refiere*/
 	font-family: "icomoon";
+	/*Que se pegue a la derecha*/
 	float: right;
+	/*Y que pase por toda la mitad*/
     line-height: 22px;
 	
 }
+/*Organizando algunos bugs del header...*/
+header:after
+{
+	clear: both;content: "";display: block;
+}
+/*cuando el cursor esté sobre el header*/
 header a div:hover
 {
 	background-color: #20B1D3
@@ -102,6 +120,7 @@ header #avatar figcaption
 	height: 50px;
 	line-height: 50px;
 }
+/*Más tipografías especiales...*/
 header #avatar figcaption:after
 {
 	content: "\e001";
@@ -126,6 +145,7 @@ nav
 
 nav ul
 {
+	/*Eliminando los puntos de los li(List items)*/
 	list-style: none;
 	margin: 0;
 	padding: 0;
@@ -232,6 +252,7 @@ nav #publicar_nav:hover
 	margin: 0 0 0 2em;
 	padding: 4px;
 	position: relative;
+	/*Eliminando toda decoración del texto*/
 	text-decoration: none;
 }
 #contenido .datos_item .comentarios_item:after
@@ -244,13 +265,12 @@ nav #publicar_nav:hover
 	position: absolute;
 	top:100%;
 }
-#contenido .datos_item .guardar_item
-
+#contenido .item .datos_item .guardar_item
+{
 	margin: 0 1em;
 	text-decoration: none;
 }
-#contenido .datos_item .guardar_item:after
-
+#contenido .item .datos_item .guardar_item:after
 {
 	color: #FD5;
 	content: "\e003";
@@ -281,12 +301,12 @@ nav #publicar_nav:hover
 	font-style: italic;
 	padding: 0.5em 0.5em 0;
 }
-#contenido .item .titulo_item a
+#contenido  .titulo_item a
 {
 	color: #444;
 	text-decoration: none;
 }
-#contenido .item .votacion
+#contenido  .votacion
 {
 	background: white;
 	border-radius: 0 0 0.5em 0.5em;
@@ -297,29 +317,30 @@ nav #publicar_nav:hover
 	top: 100%;
 	width: 96px;
 }
-#contenido .item .votacion a
+#contenido .votacion a
 {
 	text-decoration: none;
 }
-#contenido .item .votacion .down:after,
-#contenido .item .votacion .up:after
+#contenido  .votacion .down:after,
+#contenido  .votacion .up:after
 {
 	font-family: "icomoon";
 	font-size: 1.5em;
 	vertical-align: bottom;
 }
-#contenido .item .votacion .down:after
+#contenido  .votacion .down:after
 {
 	color: red;
 	content: "\e001";
 }
-#contenido .item .votacion .up:after
+#contenido .votacion .up:after
 {
 	color: green;
 	content: "\e002";
 }
 #item_resaltado
 {
+	/*Borrando algunas cosas que apareceremos cuando sea un desktop...*/
 	display: none;
 }
 
