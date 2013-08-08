@@ -2,13 +2,13 @@
 /*Cuando el viewport(la parte visible de la página) Sea mayor a 768px:*/
 @media screen and (min-width: 768px)
 {
-	/*El margin del body sea 0*/
+	/*Que el margin del body sea 0*/
 	body
 	{
 		margin: 0 auto;
 		
 	}
-	/*Aparezca la bienvenida que desaparecimos por la línea 222*/
+	/*Que aparezca la bienvenida que desaparecimos por la línea 222*/
 	#bienvenida
 	{
 		display: block;
@@ -21,6 +21,7 @@
 	/*Explicando cómo se deberán ver algunas cosas...*/
 	#bienvenida #actividad
 	{
+		display: block;
 		border-bottom: 1.3px solid #CCC;
 	}
 
@@ -37,14 +38,16 @@
 	}
 	#bienvenida #actividad .notificacion
 	{
-		border-bottom: 1.3px solid #CCC
+		border-bottom: 1.3px solid #CCC;
+		color:#b3b3b3;
+
 	}
 	#bienvenida #actividad .notificacion .actividad_mensaje
 	{
 		
-		display: inline-block;
+		display: block;
 		float: right;
-		vertical-align: center;
+		vertical-align: middle;
 		width: 75%
 	}
 	#bienvenida #actividad .notificacion .comentarios_item
@@ -52,13 +55,13 @@
 		background: #de5659;
 		border-radius: 4px;
 		color: white;
-		display: inline-block;
+		display: block;
 		float: left;
 		margin-right: 2em;
 		padding: 4px;
 		position: relative;
 		text-decoration: none;
-		vertical-align: center;
+		vertical-align: middle;
 	}
 	#bienvenida #actividad .notificacion .comentarios_item:after
 	{
@@ -66,7 +69,7 @@
 		border-right: 5px solid transparent;
 		border-top: 5px solid #de5659;
 		content: "";
-		left :10px;
+		left :25px;
 		position: absolute;
 		top:100%;
 	}
@@ -80,6 +83,7 @@
 		padding: 0.5em 0;
 		text-align: center;
 		text-decoration: none;
+		box-shadow: 1px 3px 0.3px #D4D4D4;
 	}
 	#bienvenida #registro #mensaje_registro
 	{
@@ -90,15 +94,22 @@
 		
 	}
 	/*Limitando el ancho del contenido al 70% del viewport*/
-	#contenido
+	#contenido 
 	{
+		display: block;
 		width: 70%;
 	}
+	#contenido_100
+	{
+		display: block;
+		width: 100%
+	}
+
 	#contenido #item_resaltado
 	{
 		display: block;
 	}
-	/*Hacer que la imagen grande ocupe el 100%("de su contenedor").*/
+	/*Hacer que la imagen grande ocupe el 100%(de su contenedor).*/
 	#contenido #item_resaltado img
 	{ 
 		width: 100%; 
@@ -126,10 +137,15 @@
 	{
 		display: none;
 	}
-	/*Y la fecha de publicación de los artículos desaparecerá D: */
-	#contenido .datos_item .fecha_item
+	/*Y la fecha de publicación y la opción de guardar item de los artículos desaparecerá D: (Obviamente en ningún momento debería llegar a esa resolución)*/
+	 .datos_item .guardar_item,
+	 .datos_item .fecha_item
 	{
 		display: none;
 	}
+
+
 }
-/*¡Y ya! :-D*/
+/*¡Y ya! :D*/
+/*Cualquier duda la puedes comentar, y yo u otra persona te la responderá 
+*/
