@@ -63,6 +63,7 @@ header a div {
 /*Agregar las tipografías especiales:o*/
 /*Despues del div que contiene el link que está en el header...*/
 header a div:after {
+	
 	/*Agregar la "letra":*/
 	content:"\e002";
 	/*50% de opacidad*/
