@@ -1,6 +1,6 @@
 /*Y, ahora. ¡tan tan tan!... R-e-s-p-o-n-s-i-v-e ¡DESIGN!*/
 /*Cuando el viewport(la parte visible de la página) Sea mayor a 768px:*/
-@media screen and (min-width: 768px)
+@media screen and (min-width: 900px)
 {
 	/*Que el margin del body sea 0*/
 	body
@@ -192,8 +192,7 @@
 	}
 
 }
-@media screen and (min-width: 900px)
-{}
+
 /*Ahora. Si la resolución llega a ser menor a 475px:*/
 @media screen and (max-width: 475px)
 {
