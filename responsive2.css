@@ -17,7 +17,7 @@
 	#grupo #bienvenida
 	{
 		display: block;
-		margin-top: 2em;
+		margin-top: 0;
 		float: right;
 		margin-right: 2%;
 		/*Y ocupe el 25% del viewport*/
@@ -32,6 +32,13 @@
 	#post_texto h1
 	{
 		font-size: 2em;
+	}
+	#grupo #bienvenida
+	{
+	
+		margin-top: 2em;
+	
+	
 	}
 	/*Explicando cómo se deberán ver algunas cosas...*/
 	#grupo #bienvenida #actividad
@@ -56,7 +63,7 @@
 	}
 	#grupo #bienvenida #actividad #b_comentarios
 	{
-		background: #06bbe1;
+		background: #A2A2A2;
 		border-radius: 1px;
 		color: white;
 		display: block;
@@ -228,7 +235,7 @@ nav ul li{
 
 }
 /*Si la resolución llegase a bajar de 350px:*/
-@media screen and (max-width: 350px)
+@media screen and (max-width: 430px)
 {
 	/*El título del header dejará de mostrarse*/
 	#titulo_header

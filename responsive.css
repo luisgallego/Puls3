@@ -17,7 +17,7 @@
 	#grupo #bienvenida
 	{
 		display: block;
-		margin-top: 2em;
+		margin-top: -2em;
 		float: right;
 		margin-right: 2%;
 		/*Y ocupe el 25% del viewport*/
@@ -207,7 +207,7 @@ nav ul li{
 
 }
 /*Si la resolución llegase a bajar de 350px:*/
-@media screen and (max-width: 350px)
+@media screen and (max-width: 430px)
 {
 	/*El título del header dejará de mostrarse*/
 	#titulo_header

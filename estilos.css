@@ -182,6 +182,7 @@ nav #publicar_nav {
 	margin-right:0;
 		padding-right:1em;
 	position:relative;
+	z-index: 1;
 }
 nav #publicar_nav a {
 	display:inline-block;
@@ -328,6 +329,7 @@ nav #publicar_nav:hover {
 	float:left;
 	padding:0.2em 0.5em;
 	text-decoration:none;
+	margin:0 0.2em;
 }
 .imagen_item {
 	float:left;
@@ -417,4 +419,8 @@ nav #publicar_nav:hover {
 #grupo
 {
 	display: none;
+}
+.resaltar
+{
+	border:2px solid #0FA3C0;
 }
