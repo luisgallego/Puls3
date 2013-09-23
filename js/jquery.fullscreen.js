@@ -1,4 +1,4 @@
-/*
+/*"Éste es un pequeño Plug-in de jQuery, que te permite crear fondos de pantalla completa"
     Fullscreen background is a small jQuery plugin that allows you to create fullscreen background.
 
     Author:     Gaya Kessler

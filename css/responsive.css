@@ -8,38 +8,55 @@
 		margin: 0 auto;
 		
 	}
+	
 	/*Que aparezca la bienvenida que desaparecimos por la línea 222*/
 	#grupo
 	{
 		display: block;
 		
 	}
+
 	#grupo #bienvenida
 	{
 		display: block;
-		margin-top: -2em;
-		float: right;
 		margin-right: 2%;
+		margin-top: -2em;
+        float:right;
 		/*Y ocupe el 25% del viewport*/
 		width: 25%;
+ 
 	
 	}
+
 	#post_texto
 	{
-		font-size: 1.1em;
+		font-size: 1em;
+         margin:0.6em 2em 0.6em 4em;
 		width: 65%;
+        margin:0;
+        padding:0;
 	}
+    #post_texto #post_contenido
+    {
+	font-size:16px;
+    }
+    #actividad #notificaciones
+    {
+        height:200px;
+        width:100%;
+        overflow-y:scroll;
+    }
+
 	#post_texto h1
 	{
 		font-size: 2em;
 	}
+
 	/*Explicando cómo se deberán ver algunas cosas...*/
 	#grupo #bienvenida #actividad
 	{
-		display: inline-block;
+		display:block;
 		border-bottom: 1.3px solid #CCC;
-		
-
 
 	}
 
@@ -54,20 +71,21 @@
 		text-align: center;
 		text-decoration: none;
 	}
+
 	#grupo #bienvenida #actividad .notificacion
 	{
 		border-bottom: 1.3px solid #CCC;
 		color:#b3b3b3;
-
 	}
+
 	#grupo #bienvenida #actividad .notificacion .actividad_mensaje
 	{
-		
 		display: block;
 		float: right;
 		vertical-align: middle;
 		width: 75%
 	}
+
 	#grupo #bienvenida #actividad .notificacion .comentarios_item
 	{
 		background: #de5659;
@@ -81,6 +99,7 @@
 		text-decoration: none;
 		vertical-align: middle;
 	}
+
 	#grupo #bienvenida #actividad .notificacion .comentarios_item:after
 	{
 		border-left: 5px solid transparent;
@@ -91,32 +110,35 @@
 		position: absolute;
 		top:100%;
 	}
+
 	#grupo #bienvenida #registro #b_registro
 	{
 		background: #06bbe1;
 		border-radius: 1px;
+		box-shadow: 1px 3px 0.3px #D4D4D4;
 		color: white;
 		display: block;
 		font-size: 1.2em;
 		padding: 0.5em 0;
 		text-align: center;
 		text-decoration: none;
-		box-shadow: 1px 3px 0.3px #D4D4D4;
 	}
+
 	#grupo #bienvenida p
 	{
 		display: block;
-
 		width: 100%;
 	}
+
 	#grupo #bienvenida #autor_nombre
 	{
 		display: block;
 		float: left;
 		font-size: 1.2em;
-		width: 60%;
 		vertical-align: top;
+		width: 60%;
 	}
+
 	#grupo #bienvenida #autor_nombre span
 	{
 		color: #A2A2A2;
@@ -124,23 +146,26 @@
 		float: left;
 		font-size: 0.7em;
 		font-weight: normal;
-		width: 60%;
 		vertical-align: top;
+		width: 60%;
 	}
+
 	#grupo #bienvenida #avatar_autor
 	{
-		border: 2px #4C4C4C solid;
 		border-radius: 2px;
+		border: 2px #4C4C4C solid;
 		display: inline-block;
 		float: left;
-		width: 50px;
 		height: 50px;
 		margin:0 0.5em 0.2em 0;
+		width: 50px;
 	}
+
 	#grupo #bienvenida #seguir
 	{
 		background: #06bbe1;
 		border-radius: 3px;
+		box-shadow: 1px 3px 0.3px #D4D4D4;
 		color: white;
 		display: block;
 		float: right;
@@ -148,10 +173,10 @@
 		padding: 0.5em 0;
 		text-align: center;
 		text-decoration: none;
-		box-shadow: 1px 3px 0.3px #D4D4D4;
-		width: 38%;
 		vertical-align: top;
+		width: 38%;
 	}
+
 	#grupo #bienvenida #mensaje
 	{
 		color: #A2A2A2;
@@ -161,20 +186,23 @@
 		text-decoration: none;
 		width: 100%;
 	}
+	
 	#grupo #bienvenida #registro #mensaje_registro
 	{
-		font-size: 0.8em;
 		color: #b3b3b3;
-		text-align:center;
+		font-size: 0.8em;
 		font-style: italic;
+		text-align:center;
 		
 	}
+
 	/*Litando el ancho del contenido al 70% del viewport*/
 	#contenido 
 	{
 		display: block;
 		width: 70%;
 	}
+
 	#contenido_100
 	{
 		display: block;
@@ -185,44 +213,64 @@
 	{
 		display: block;
 	}
+
 	/*Hacer que la imagen grande ocupe el 100%(de su contenedor).*/
 	#contenido #item_resaltado
 	{ 
 		width: 100%; 
 	}
-
 }
-@media screen and (min-width: 900px)
-{}
+
 /*Ahora. Si la resolución llega a ser menor a 475px:*/
 @media screen and (max-width: 475px)
 {
-	/*El botón de publicar deje de flotar a la derecha, para que no se quiebre, y comienze a ser otro botón común del nav*/
-	
-nav ul li{
-	display: block;
-	margin-left: auto;
-    margin-right: auto;
-}
+	/*El botón de publicar deje de flotar a la derecha, para que no se quiebre, y comienze a ser otro botón común del nav*/	
+	nav ul li
+	{
+		display: block;
+		margin-left: auto;
+	    margin-right: auto;
+	}
 
 }
-/*Si la resolución llegase a bajar de 350px:*/
-@media screen and (max-width: 430px)
+@media screen and (max-width: 675px)
 {
+    nav #publicar_nav 
+    {
+        float:none;
+        margin:auto;
+    }
 	/*El título del header dejará de mostrarse*/
 	#titulo_header
 	{
 		display: none;
 	}
-	/*Y la fecha de publicación y la opción de guardar item de los artículos desaparecerá D: (Obviamente en ningún momento debería llegar a esa resolución)*/
+	header a div
+	{
+		left: 20%;
+	}
+	@media screen and (min-width: 350px)
+	{
+		/*El título alternativo aparecerá*/	
+		#titulo_header2
+		{
+			display: block;
+		}
+    }
+}
+
+/*Si la resolución llegase a bajar de 350px:*/
+@media screen and (max-width: 350px)
+{
+
+	/*La fecha de publicación y la opción de guardar item de los artículos desaparecerá D: (Obviamente en ningún momento debería llegar a esa resolución)*/
 	 .datos_item .guardar_item,
 	 .datos_item .fecha_item
 	{
 		display: none;
 	}
-
-
 }
+
 /*¡Y ya! :D*/
 /*Cualquier duda la puedes comentar, y yo u otra persona te la responderá 
 */

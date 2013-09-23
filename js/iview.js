@@ -1,4 +1,4 @@
-/**
+/**El js está medio comentado en inglés... Espero que les sea de utilidad igualmente.
  * jQuery iView Slider v2.0
  * 
  * @version: 2.0.1 - August 17, 2012
@@ -1534,50 +1534,95 @@
 	$.fn.iView = function (options) {
 
 		// Default options. Play carefully.
+		/*Las opciones por defecto. Cuando cambies algo, hazlo con cuidado*/
 		options = jQuery.extend({
+			/*Transición por defecto ( en caso de que no especifiques una )*/
 			fx: 'random',
+			/*Esta es como la forma en que se da la transición*/
 			easing: 'easeOutQuad',
+			/*El número de columnas ( Para las animaciones que su nombre tenga strip[Strip-up-right Por ejemplo) */
 			strips: 20,
+			/*Bloques por columna ( Para las animaciones de bloques, o cortinas o zigzag... )*/
 			blockCols: 10,
+			/*Bloques por fila*/
 			blockRows: 5,
+			/*Velocidad de la transición*/
 			animationSpeed: 500,
+			/*Duración de cada imagen ( Milisegundos )*/
 			pauseTime: 5000,
+			/*La "Diapositiva de inicio del slideshow" ("0" es la primera)*/
 			startSlide: 0,
+			/*Flechas de dirección*/
 			directionNav: true,
+			/*La opacidad de las flechas de dirección cuando el hover acabe*/
 			directionNavHoverOpacity: 0.6,
+			/*Barra de controles. Normalmente entra en conflicto con el responsive...*/
 			controlNav: false,
+			/*Botones de anterior y siguiente.*/
 			controlNavNextPrev: true,
+			/*La opacidad de la barra de controles cuando no se hace hover*/
 			controlNavHoverOpacity: 0.6,
+			/*Los previews o muestras de las imágenes en miniatura*/
 			controlNavThumbs: false,
+			/*No entiendo muy bien... Vuene siendo lo mismo*/
 			controlNavTooltip: true,
+			/*Velocidad de la transición del "texto"*/
 			captionSpeed: 500,
+			/*Esta es como la forma en que se da la transición del "texto"*/
 			captionEasing: 'easeInOutSine',
+			/*La opacidad del "texto" (1 = 100%)*/
 			captionOpacity: 1,
+			/*Permitir que se pasen solas*/
 			autoAdvance: true,
+			/*Permitir pasarlas con las flechitas del teclado*/
 			keyboardNav: true,
+			/*Permitir pasar con el dedo :o ( Si la pantalla es touch, obviamente )*/
 			touchNav: true,
+			/*Pausar cuando se pase sobre la imagen ( En este caso desde el index lo cambiamos por true )*/
 			pauseOnHover: false,
-			nextLabel: "Next",
-			previousLabel: "Previous",
+			/*El "Tooltip" que sale cuando pasas sobre el botón para ir a la siguiente "diapositiva"*/
+			nextLabel: "Siguiente",
+			/*El que sale cuando pasas sobre el botón para ir a la anterior*/
+			previousLabel: "Anterior",
+			/*El que sale cuando pasas sobre el botón para dar play*/
 			playLabel: "Play",
+			/*El que sale cuando pasas sobre el botón para dar pausa*/
 			pauseLabel: "Pause",
+			/*El que sale cuando pasas sobre el botón para cerrar*/
 			closeLabel: "Close",
-			randomStart: false,
+			/*Que la primera diapositiva sea aleatoria*/
+			randomStart: true,
+			/*El tipo de barra de tiempo ( En el indes lo cambiamos por "bar" A mí sólo me funciona bar , pero también está 360bar, pie. No sé, busca por ahí) :)*/
 			timer: 'Pie',
+			/*El color de fondo de la barra de tiempo*/
 			timerBg: '#000',
+			/*El color de la barra de tiempo*/
 			timerColor: '#EEE',
+			/*La opacidad de la barra de tiempo*/
 			timerOpacity: 0.5,
+			/*El espacio que ocupa la barra ésa ↑ ( En el index lo cambiamos por el 70% )*/
 			timerDiameter: 30,
+			/*El espacio vital :3 para la barra de tiempo*/
 			timerPadding: 4,
+			/*El grosor de la misma*/
 			timerStroke: 3,
+			/*Grosor del borde de la barra*/
 			timerBarStroke: 1,
+			/*Color del borde de la barra*/
 			timerBarStrokeColor: '#EEE',
+			/*El estilo ( sólido, cortado... ) de la barra ésa*/
 			timerBarStrokeStyle: 'solid',
+			/*La posición de la barra ( Por el index lo cambiamos también )*/
 			timerPosition: 'top-right',
+			/*Posición en x de la b.*/
 			timerX: 10,
+			/*Posición en y de la b.*/
 			timerY: 10,
+			/*Posición en x por defecto del "texto"*/
 			tooltipX: 5,
+			/*Posición en y por defecto del "texto"*/
 			tooltipY: -5,
+			/*Declarando algunas funciones. Y creo que aquí los dejo...:D*/
 			onBeforeChange: function () {},
 			onAfterChange: function () {},
 			onAfterLoad: function () {},

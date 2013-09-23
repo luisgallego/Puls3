@@ -41,14 +41,6 @@
 	height: 27px;
 	background-image: url(../../img/bg_direction_nav.png);
 	text-indent: -9999px;
-	-webkit-transition: left 0.3s ease-in-out;
-	-webkit-transition-property: left,right;
-	-moz-transition: left 0.3s ease-in-out;
-	-moz-transition-property: left,right;
-	-o-transition: left 0.3s ease-in-out;
-	-o-transition-property: left,right;
-	-ms-transition: left 0.3s ease-in-out;
-	-ms-transition-property: left,right;
 	transition: left 0.3s ease-in-out;
 	transition-property: left,right;
 }

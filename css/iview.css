@@ -19,8 +19,6 @@
 #iview-preloader {
 	position: absolute;
 	z-index: 1000;
-	-webkit-border-radius: 3px;
-	-moz-border-radius: 3px;
 	border-radius: 3px;
 	border: #000 1px solid;
 	padding: 1px;
@@ -29,8 +27,6 @@
 }
 #iview-preloader div {
 	float: left;
-	-webkit-border-radius: 2px;
-	-moz-border-radius: 2px;
 	border-radius: 2px;
 	height: 3px;
 	background: #000;
@@ -120,8 +116,6 @@
 	font-size: 22px;
 	font-weight: bold;
 	overflow: hidden;
-	-webkit-border-radius: 15px;
-	-moz-border-radius: 15px;
 	border-radius: 15px;
 }
 .iview-video-show .iview-video-container a.iview-video-close:hover {

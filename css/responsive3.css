@@ -1,5 +1,5 @@
 /*Y, ahora. ¡tan tan tan!... R-e-s-p-o-n-s-i-v-e ¡DESIGN!*/
-/*Cuando el viewport(la parte visible de la página) Sea mayor a 768px:*/
+/*Cuando el viewport(la parte visible de la página) Sea mayor a 900px:*/
 @media screen and (min-width: 900px)
 {
 	/*Que el margin del body sea 0*/
@@ -17,29 +17,30 @@
 	#grupo #bienvenida
 	{
 		display: block;
-		margin-top: 0;
+		margin-top: 2em;
 		float: right;
 		margin-right: 2%;
 		/*Y ocupe el 25% del viewport*/
-		width: 25%;
+		width: 22%;
 	
 	}
 	#post_texto
 	{
 		font-size: 1.1em;
-		width: 65%;
+        width: 71%;
+        padding: 1%;
+        padding-top: 0;
+        padding-bottom:35px;
+        margin: 0;
 	}
 	#post_texto h1
 	{
 		font-size: 2em;
 	}
-	#grupo #bienvenida
-	{
-	
-		margin-top: 2em;
-	
-	
-	}
+    #post_texto #post_contenido
+    {
+        font-size:16px;
+    }
 	/*Explicando cómo se deberán ver algunas cosas...*/
 	#grupo #bienvenida #actividad
 	{
@@ -145,6 +146,7 @@
 		font-size: 1.2em;
 		width: 60%;
 		vertical-align: top;
+		color:#555;
 	}
 	#grupo #bienvenida #autor_nombre span
 	{
@@ -166,7 +168,7 @@
 		height: 50px;
 		margin:0 0.5em 0.2em 0;
 	}
-	#grupo #bienvenida #seguir
+	#grupo #bienvenida .seguir
 	{
 		background: #06bbe1;
 		border-radius: 3px;
@@ -222,35 +224,46 @@
 
 }
 
-/*Ahora. Si la resolución llega a ser menor a 475px:*/
 @media screen and (max-width: 475px)
 {
-	/*El botón de publicar deje de flotar a la derecha, para que no se quiebre, y comienze a ser otro botón común del nav*/
-	
-nav ul li{
-	display: block;
-	margin-left: auto;
-    margin-right: auto;
-}
+	/*El botón de publicar deje de flotar a la derecha, para que no se quiebre, y comienze a ser otro botón común del nav*/	
+	nav ul li
+	{
+		display: block;
+		margin-left: auto;
+	    margin-right: auto;
+	}
 
 }
-/*Si la resolución llegase a bajar de 350px:*/
-@media screen and (max-width: 430px)
+@media screen and (max-width: 540px)
+{
+    nav #publicar_nav 
+    {
+        float:none;
+        margin:auto;
+    }
+}
+@media screen and (max-width: 675px)
 {
 	/*El título del header dejará de mostrarse*/
 	#titulo_header
 	{
 		display: none;
 	}
-	/*Y la fecha de publicación y la opción de guardar item de los artículos desaparecerá D: (Obviamente en ningún momento debería llegar a esa resolución)*/
-	 .datos_item .guardar_item,
-	 .datos_item .fecha_item
+	header a div
 	{
-		display: none;
+		left: 20%;
 	}
-
-
+	@media screen and (min-width: 350px)
+	{
+		/*El título alternativo aparecerá*/	
+		#titulo_header2
+		{
+			display: block;
+		}
+    }
 }
+
 /*¡Y ya! :D*/
 /*Cualquier duda la puedes comentar, y yo u otra persona te la responderá 
 */
